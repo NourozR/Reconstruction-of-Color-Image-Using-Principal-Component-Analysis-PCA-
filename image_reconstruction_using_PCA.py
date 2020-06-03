@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np 
 from PIL import Image
 
-# IMPORTING IMAGE USING SCIPY AND TAKING R,G,B COMPONENTS
-
+# IMPORTING IMAGE USING Matplotlib AND TAKING R,G,B COMPONENTS
+#a = scipy.ndimage.imread("dhoni.jpg") #In my laptop it ws not able to invoke imread, so imported image via plt.imread
 a = plt.imread("dhoni.jpg")
 a_np = np.array(a)
 a_r = a_np[:,:,0]
